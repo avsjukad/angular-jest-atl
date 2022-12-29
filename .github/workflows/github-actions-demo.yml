@@ -1,4 +1,4 @@
-name: Jest tests
+name: Jest ATL tests
 on: [push]
 jobs:
   build:

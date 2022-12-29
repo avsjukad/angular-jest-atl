@@ -1,4 +1,5 @@
 import 'jest-preset-angular/setup-jest';
+import '@testing-library/jest-dom'
 
 import { jest } from '@jest/globals';
 
@@ -13,6 +14,9 @@ Object.defineProperty(window, 'getComputedStyle', {
     return {
       display: 'none',
       appearance: ['-webkit-appearance'],
+      getPropertyValue: () => {
+        return '';
+    }
     };
   },
 });

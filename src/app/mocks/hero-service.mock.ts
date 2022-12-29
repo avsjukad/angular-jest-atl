@@ -7,7 +7,7 @@ export const heroServiceMock = {
   getHeroes: jest.fn(() => of(heroesCopy)),
   addHero: jest.fn((hero: Hero) => {
     hero.id = heroesCopy.length + 1;
-    heroesCopy.push(hero);
+    // heroesCopy.push(hero);
     return of(hero);
   }),
   deleteHero: jest.fn((heroId: number) =>{
